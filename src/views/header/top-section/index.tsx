@@ -1,4 +1,4 @@
-import balance from '../../../assets/header/balance.svg';
+import balanceImage from "./balance.svg";
 
 const TopSection = () => {
     return (
@@ -19,7 +19,7 @@ const TopSection = () => {
 
             <div>
                 <div>
-                    <img src={balance} alt={"balance"}/>
+                    <img src={balanceImage} alt={"balance"}/>
                     <a>Balance</a>
                 </div>
 
