@@ -1,8 +1,16 @@
 import balanceImage from "../../../assets/header/balance.svg";
+import {FormControl, InputLabel, MenuItem, Select, SelectChangeEvent} from "@mui/material";
+import React, {useState} from "react";
 
 const TopSection = () => {
+    const [age, setAge] = useState('');
+
+    const handleChange = (event: SelectChangeEvent) => {
+        setAge(event.target.value as string);
+    };
+
     return (
-        <div className="flex justify-between mb-0.5">
+        <div className="flex justify-between">
             <div className="h-full">
                 <ul className="flex items-center gap-2 h-full">
                     <li>
@@ -17,17 +25,26 @@ const TopSection = () => {
                 </ul>
             </div>
 
-            <div>
-                <div>
+            <div className="h-full flex items-center gap-2">
+                <div className="h-full flex items-center gap-2">
                     <img src={balanceImage} alt={"balance"}/>
                     <a>Balance</a>
                 </div>
 
-                <select>
-                    <option>KZT</option>
-                    <option>USD</option>
-                    <option>AED</option>
-                </select>
+                <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={"KZT"}
+                        label="Age"
+                        onChange={handleChange}
+                    >
+                        <MenuItem value={"KZT"}>KZT</MenuItem>
+                        <MenuItem value={"USD"}>USD</MenuItem>
+                        <MenuItem value={"AED"}>AED</MenuItem>
+                    </Select>
+                </FormControl>
             </div>
         </div>
     );

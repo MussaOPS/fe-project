@@ -5,7 +5,6 @@ import React from "react";
 import RoutesComponent from "./routes";
 
 // Styles
-// import "./styles/global.scss";
 import "./styles/container.scss";
 import "./styles/tailwind.scss";
 

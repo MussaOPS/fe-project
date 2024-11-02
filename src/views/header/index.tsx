@@ -5,7 +5,7 @@ import BottomSection from "./bottom-section";
 const Header = () => {
     return (
         <section className="bg-cyan-400">
-            <header className="container p-2">
+            <header className="container p-6">
                 <TopSection/>
 
                 <BottomSection/>
