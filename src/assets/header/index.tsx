@@ -1,4 +1,4 @@
-import balanceImage from "./balance.svg";
+import balanceImage from "../../views/header/top-section/balance.svg";
 
 const TopSection = () => {
     return (

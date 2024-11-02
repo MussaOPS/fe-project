@@ -1,10 +1,10 @@
 // Imports
-import TopSection from "./top-section";
+import TopSection from "../../assets/header";
 import BottomSection from "./bottom-section";
 
 const Header = () => {
     return (
-        <header>
+        <header className="bg-cyan-400">
             <TopSection/>
 
             <BottomSection/>
