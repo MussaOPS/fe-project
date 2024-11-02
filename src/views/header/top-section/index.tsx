@@ -1,10 +1,10 @@
-import balanceImage from "../../views/header/top-section/balance.svg";
+import balanceImage from "../../../assets/header/balance.svg";
 
 const TopSection = () => {
     return (
         <div className="flex justify-between mb-0.5">
-            <div>
-                <ul className="">
+            <div className="h-full">
+                <ul className="flex items-center gap-2 h-full">
                     <li>
                         <a href="#">Address</a>
                     </li>

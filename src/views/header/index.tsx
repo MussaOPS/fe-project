@@ -1,14 +1,16 @@
 // Imports
-import TopSection from "../../assets/header";
+import TopSection from "./top-section";
 import BottomSection from "./bottom-section";
 
 const Header = () => {
     return (
-        <header className="bg-cyan-400">
-            <TopSection/>
+        <section className="bg-cyan-400">
+            <header className="container p-2">
+                <TopSection/>
 
-            <BottomSection/>
-        </header>
+                <BottomSection/>
+            </header>
+        </section>
     );
 }
 
