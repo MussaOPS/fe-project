@@ -1,6 +1,5 @@
 // Libraries
-import {useEffect} from "react";
-import {Navigate, Route, Routes, useLocation} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 
 // Pages
 import MainPage from "../../pages/MainPage";
@@ -13,8 +12,6 @@ const routes = [
 
 
 const RoutesComponent = () => {
-    const location = useLocation();
-
     return (
         <Routes>
             {routes.map(route => (
