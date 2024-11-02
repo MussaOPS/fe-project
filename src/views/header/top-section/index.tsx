@@ -1,3 +1,5 @@
+import balance from '../../../assets/header/balance.svg';
+
 const TopSection = () => {
     return (
         <div className="flex justify-between mb-0.5">
@@ -17,6 +19,7 @@ const TopSection = () => {
 
             <div>
                 <div>
+                    <img src={balance} alt={"balance"}/>
                     <a>Balance</a>
                 </div>
 

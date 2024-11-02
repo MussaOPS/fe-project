@@ -1,3 +1,4 @@
+// Imports
 import TopSection from "./top-section";
 import BottomSection from "./bottom-section";
 
